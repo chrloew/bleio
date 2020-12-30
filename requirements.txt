@@ -1,1 +1,7 @@
 discord
+numpy
+matplotlib.pyplot
+io
+urllib
+base64
+random
