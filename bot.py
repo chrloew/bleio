@@ -25,7 +25,7 @@ reply_messages = [
 	"Phiew, ich meine ja, die Stichworte waren kinda weird, aber ich habe das beste draus gemacht *uff* lol",
 	"Naja, schaut komisch aus, aber bringt sicher Glück 🎩🐷"]
 
-global bleios_count = 0
+bleios_count = 0
 
 @client.event
 async def on_ready():
