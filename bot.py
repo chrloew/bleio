@@ -58,15 +58,15 @@ async def on_message(message):
 		await message.channel.send(message.author.name+' 🔥 schmilzt 🪨 das Blei 🥄 im Löffel .. 🤵 .. ')
 		bleio_filename = 'bleio_'+str(message.id)+'.png'
 		bleio(bleio_filename)
-		#time.sleep(randint(1,4))
+		
 		wartezeit = randint(7,10)
 		print('Wartezeit 1: '+str(wartezeit)+'s.')
-		await asyncwait(randint(10,15))
+		await asyncwait(wartezeit)
 		await message.channel.send('Langsam tut sich was... 🤵')
 
 		wartezeit = randint(3,10)
 		print('Wartezeit 2: '+str(wartezeit)+'s.')
-		await asyncwait(randint(10,15))
+		await asyncwait(wartezeit)
 		
 		await message.channel.send('Uuuund.. _splash_ 💨!')
 		await message.channel.send(file=discord.File(bleio_filename))
