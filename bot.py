@@ -1,7 +1,7 @@
 import discord
 import os
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 import numpy as np
 from scipy.special import binom
@@ -14,7 +14,7 @@ import random
 from boto.s3.connection import S3Connection
 
 client = discord.Client()
-load_dotenv('.env')
+#load_dotenv('.env')
 
 reply_messages = [
 	"Hmm, interessant! ",
