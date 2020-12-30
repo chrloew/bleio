@@ -32,7 +32,7 @@ bleios_count = 0
 async def on_ready():
 	print('We have logged in as {0.user}'.format(client))
 
-	await client.change_presence(game=discord.Game(name="!blei", type=1))
+	await client.change_presence(activity=discord.Game(name="!blei", type=1))
 
 	#text_channel_list = []
 	#for guild in client.guilds:
