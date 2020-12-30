@@ -186,10 +186,10 @@ def bleio(filename):
 	#ax.set_facecolor((1.0, 0.47, 0.42))
 
 
-	fig.patch.set_facecolor('#36393E')
+	fig.patch.set_facecolor('#e5f8ff')#'#36393E')
 	fig.patch.set_alpha(0.7)
 
-	ax.patch.set_facecolor('#36393E')
+	ax.patch.set_facecolor('#e5f8ff')
 	ax.patch.set_alpha(0.5)
 
 	positions=np.array([[0,0], [0,0.5], [0,1], [1,0], [1,0.5], [1,1], [0.5,0], [0.5,0.5], [0.5,1]])
