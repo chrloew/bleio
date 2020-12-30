@@ -3,7 +3,7 @@ import os
 
 #from dotenv import load_dotenv
 
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import numpy as np
 from scipy.special import binom
 import io 
