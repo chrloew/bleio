@@ -51,9 +51,9 @@ async def on_message(message):
 	if message.content.startswith('$hello'):
 		await message.channel.send('Hello!')
 		
-	if message.content.startswith('!b'):
+	if message.content.startswith('!blei'):
 		await message.add_reaction('🎉')
-		await message.channel.send(message.author.name+' schmilzt 🔥 das Blei 🪨 im Löffel 🥄 - impressive!')
+		await message.channel.send(message.author.name+' schmilzt 🔥 das Blei 🪨 im Löffel 🥄 .. 🤵 .. ')
 		bleio_filename = 'bleio_'+str(message.id)+'.png'
 		bleio(bleio_filename)
 		time.sleep(randint(1,4))
