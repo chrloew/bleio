@@ -30,6 +30,15 @@ reply_messages = [
 	"Yeah, da kann 2021 kommen! äh",
 	"😇"]
 
+wait_messages = [
+	"Langsam tut sich was.. ",
+	"Meh schneller..! 💤",
+	"Shiny shiny .. 💥 ..",
+	"Seit wann macht man das eigentlich zu Silvester 🤔 ..",
+	"AU die Kerze is heiß 😣 ..",
+	"Es wird.. es wird..",
+	"Uuuuuuuuunnddd........."]
+
 bleios_count = 0
 
 @client.event
@@ -57,14 +66,15 @@ async def on_message(message):
 		
 	if message.content.startswith('!blei'):
 		await message.add_reaction('🎉')
-		await message.channel.send(message.author.name+' 🔥 schmilzt 🪨 das Blei 🥄 im Löffel .. 🤵 .. ')
+		await message.channel.send(message.author.name+' 🔥 schmilzt das 🪨 Blei im 🥄 Löffel .. ')
 		bleio_filename = 'bleio_'+str(message.id)+'.png'
 		bleio(bleio_filename)
 		
 		wartezeit = randint(7,10)
 		print('Wartezeit 1: '+str(wartezeit)+'s.')
 		await asyncwait(wartezeit)
-		await message.channel.send('Langsam tut sich was... 🤵')
+		#await message.channel.send(' langsam tut sich was... 🤵')
+		await message.channel.send(random.choice(wait_messages))
 
 		wartezeit = randint(3,10)
 		print('Wartezeit 2: '+str(wartezeit)+'s.')
