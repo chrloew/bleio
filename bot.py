@@ -14,6 +14,8 @@ import urllib, base64
 from random import randint
 import random
 
+import asyncio
+
 from boto.s3.connection import S3Connection
 
 client = discord.Client()
@@ -56,7 +58,8 @@ async def on_message(message):
 		await message.channel.send(message.author.name+' schmilzt 🔥 das Blei 🪨 im Löffel 🥄 .. 🤵 .. ')
 		bleio_filename = 'bleio_'+str(message.id)+'.png'
 		bleio(bleio_filename)
-		time.sleep(randint(1,4))
+		#time.sleep(randint(1,4))
+		asyncwait(randint(1,10))
 		#await message.channel.send('*pschhhht*')
 		await message.channel.send('Uuuund.. _splash_ 💨 hier zu bewundern ist das Werk von '+ message.author.name+'!')
 		await message.channel.send(file=discord.File(bleio_filename))
@@ -85,7 +88,9 @@ async def on_reaction_add(reaction, user):
 		#await reaction.message.channel.send(emoji)
 
 
-
+async def asyncwait(time):
+    await asyncio.sleep(time)
+    
 
 
 
