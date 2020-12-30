@@ -25,6 +25,8 @@ reply_messages = [
 	"Phiew, ich meine ja, die Stichworte waren kinda weird, aber ich habe das beste draus gemacht *uff* lol",
 	"Naja, schaut komisch aus, aber bringt sicher Glück 🎩🐷"]
 
+bleios_count = 0
+
 @client.event
 async def on_ready():
 	print('We have logged in as {0.user}'.format(client))
@@ -55,6 +57,8 @@ async def on_message(message):
 		await message.channel.send(file=discord.File(bleio_filename))
 		#await message.channel.send('Hmm interessant!')
 		await message.channel.send(random.choice(reply_messages))
+		bleios_count += 1
+		print('Created Led Pouring #'+str(bleios_count)+' for '+message.author.name+'.')
 		os.remove(bleio_filename)
 
 
