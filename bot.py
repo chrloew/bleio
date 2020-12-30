@@ -41,6 +41,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+	global bleios_count
 	if message.author == client.user:
 		return
 
@@ -57,7 +58,7 @@ async def on_message(message):
 		await message.channel.send(file=discord.File(bleio_filename))
 		#await message.channel.send('Hmm interessant!')
 		await message.channel.send(random.choice(reply_messages))
-		global bleios_count += 1
+		bleios_count += 1
 		print('Created Led Pouring #'+str(bleios_count)+' for '+message.author.name+'.')
 		os.remove(bleio_filename)
 
