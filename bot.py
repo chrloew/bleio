@@ -24,9 +24,11 @@ client = discord.Client()
 reply_messages = [
 	"Hmm, interessant! ",
 	"Da habe ich mich selber übertroffen, dieser Zufall, so zufällig!",
-	"Klare Sache, ist doch offensichtlich, man erkennt jedes einzelne Stichwort.",
-	"Phiew, ich meine ja, die Stichworte waren kinda weird, aber ich habe das beste draus gemacht *uff* lol",
-	"Naja, schaut komisch aus, aber bringt sicher Glück 🎩🐷"]
+	"Klare Sache, ist doch offensichtlich.",
+	"lol 🤪💫",
+	"Naja, schaut komisch aus, aber bringt sicher Glück 🎩🐷",
+	"Yeah, da kann 2021 kommen! äh",
+	"😇"]
 
 bleios_count = 0
 
@@ -186,10 +188,10 @@ def bleio(filename):
 	#ax.set_facecolor((1.0, 0.47, 0.42))
 
 
-	fig.patch.set_facecolor('#e5f8ff')#'#36393E')
+	fig.patch.set_facecolor('#36393E')
 	fig.patch.set_alpha(0.7)
 
-	ax.patch.set_facecolor('#e5f8ff')
+	ax.patch.set_facecolor('#36393E')
 	ax.patch.set_alpha(0.5)
 
 	positions=np.array([[0,0], [0,0.5], [0,1], [1,0], [1,0.5], [1,1], [0.5,0], [0.5,0.5], [0.5,1]])
