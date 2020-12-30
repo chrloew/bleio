@@ -4,6 +4,7 @@ import os
 #from dotenv import load_dotenv
 
 import matplotlib as plt
+plt.use('Agg')
 import numpy as np
 from scipy.special import binom
 import io 
