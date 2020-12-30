@@ -32,13 +32,7 @@ bleios_count = 0
 async def on_ready():
 	print('We have logged in as {0.user}'.format(client))
 
-	client.user.setPresence({
-        status: "online",  //You can show online, idle....
-        game: {
-            name: "!blei",  //The message shown
-            type: "PLAYING" //PLAYING: WATCHING: LISTENING: STREAMING:
-        }
-    });
+	await self.bot.change_presence(game=discord.Game(name="!blei", type=1)
 
 	#text_channel_list = []
 	#for guild in client.guilds:
