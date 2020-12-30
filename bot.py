@@ -1,5 +1,6 @@
 import discord
 import os
+import time
 
 #from dotenv import load_dotenv
 
@@ -50,9 +51,10 @@ async def on_message(message):
 		
 	if message.content.startswith('!b'):
 		await message.add_reaction('🎉')
-		await message.channel.send(message.author.name+' macht sich bereit zum Bleigießen! Während das Blei 🪨 im Löffel 🥄 schmilzt 🔥, schieb mir doch ein paar Reactions rüber!')
+		await message.channel.send(message.author.name+' schmilzt 🔥 das Blei 🪨 im Löffel 🥄 - impressive!')
 		bleio_filename = 'bleio_'+str(message.id)+'.png'
 		bleio(bleio_filename)
+		time.sleep(randint(1,4))
 		#await message.channel.send('*pschhhht*')
 		await message.channel.send('Uuuund.. _splash_ 💨 hier zu bewundern ist das Werk von '+ message.author.name+'!')
 		await message.channel.send(file=discord.File(bleio_filename))
