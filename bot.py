@@ -71,13 +71,13 @@ async def on_message(message):
 		bleio(bleio_filename)
 		
 		wartezeit = randint(7,10)
-		print('Wartezeit 1: '+str(wartezeit)+'s.')
+		#print('Wartezeit 1: '+str(wartezeit)+'s.')
 		await asyncwait(wartezeit)
 		#await message.channel.send(' langsam tut sich was... 🤵')
 		await message.channel.send(random.choice(wait_messages))
 
 		wartezeit = randint(3,10)
-		print('Wartezeit 2: '+str(wartezeit)+'s.')
+		#print('Wartezeit 2: '+str(wartezeit)+'s.')
 		await asyncwait(wartezeit)
 		
 		await message.channel.send('Uuuund.. _splash_ 💨!')
