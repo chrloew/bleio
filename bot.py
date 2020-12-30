@@ -3,9 +3,9 @@ import os
 
 #from dotenv import load_dotenv
 
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy.special import binom
-import matplotlib.pyplot as plt
 import io 
 import urllib, base64 
 from random import randint
