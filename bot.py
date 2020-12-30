@@ -173,7 +173,7 @@ def get_random_points(n=5, scale=0.8, mindst=None, rec=0):
 		return get_random_points(n=n, scale=scale, mindst=mindst, rec=rec+1)
 
 def bleio(filename):
-	fig, ax = plt.subplots
+	fig, ax = plt.subplots()
 	ax.set_aspect("equal")
 	#ax.set_facecolor((1.0, 0.47, 0.42))
 
