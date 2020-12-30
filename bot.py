@@ -11,6 +11,8 @@ import urllib, base64
 from random import randint
 import random
 
+from boto.s3.connection import S3Connection
+
 client = discord.Client()
 load_dotenv('.env')
 
@@ -215,4 +217,4 @@ def bleio(filename):
 	
 	return 1
 
-client.run(os.getenv('TOKEN'))
+client.run(os.environ['BOT_TOKEN'])
