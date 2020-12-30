@@ -45,7 +45,7 @@ bleios_count = 0
 async def on_ready():
 	print('We have logged in as {0.user}'.format(client))
 
-	await client.change_presence(activity=discord.Game(name="!blei", type=1))
+	await client.change_presence(activity=discord.Game(name="!bleigießen", type=1))
 
 	#text_channel_list = []
 	#for guild in client.guilds:
@@ -205,7 +205,7 @@ def bleio(filename):
 	ax.patch.set_alpha(0.5)
 
 	positions=np.array([[0,0], [0,0.5], [0,1], [1,0], [1,0.5], [1,1], [0.5,0], [0.5,0.5], [0.5,1]])
-	random_coords=np.random.choice([0, 1, 2, 3, 4, 5, 6, 7, 8],randint(1,8), replace=False)
+	random_coords=np.random.choice([0, 1, 2, 3, 4, 5, 6, 7, 8],randint(1,4), replace=False)
 	#print(random_coords)
 	for c2 in random_coords:
 	#for c in np.array([[0,0], [0,0.5], [0,1], [1,0], [1,0.5], [1,1], [0.5,0], [0.5,0.5], [0.5,1]]):
