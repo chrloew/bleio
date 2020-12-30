@@ -59,7 +59,7 @@ async def on_message(message):
 		bleio_filename = 'bleio_'+str(message.id)+'.png'
 		bleio(bleio_filename)
 		#time.sleep(randint(1,4))
-		asyncwait(randint(7,10))
+		await asyncwait(randint(7,10))
 		#await message.channel.send('*pschhhht*')
 		await message.channel.send('Uuuund.. _splash_ 💨 hier zu bewundern ist das Werk von '+ message.author.name+'!')
 		await message.channel.send(file=discord.File(bleio_filename))
