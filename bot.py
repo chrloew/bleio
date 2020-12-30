@@ -198,11 +198,11 @@ def bleio(filename):
 	#ax.set_facecolor((1.0, 0.47, 0.42))
 
 
-	#fig.patch.set_facecolor('#36393E')
-	#fig.patch.set_alpha(0.7)
+	fig.patch.set_facecolor('#36393E')
+	fig.patch.set_alpha(0.7)
 
-	#ax.patch.set_facecolor('#36393E')
-	#ax.patch.set_alpha(0.5)
+	ax.patch.set_facecolor('#36393E')
+	ax.patch.set_alpha(0.5)
 
 	positions=np.array([[0,0], [0,0.5], [0,1], [1,0], [1,0.5], [1,1], [0.5,0], [0.5,0.5], [0.5,1]])
 	random_coords=np.random.choice([0, 1, 2, 3, 4, 5, 6, 7, 8],randint(1,8), replace=False)
@@ -232,7 +232,7 @@ def bleio(filename):
 		ax.fill(x,y, color=color_theme)
 		plt.plot(x,y, color=color_theme)
 
-	#plt.axis('off')
+	plt.axis('off')
 	plt.savefig(filename, bbox_inches='tight')
 
 	#plt.show()
