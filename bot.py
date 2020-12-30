@@ -77,26 +77,13 @@ async def on_reaction_add(reaction, user):
 		#    return
 
 		# ensure it was the session author who reacted
-		if user.id != reaction.message.author.id:
-		    return
+		
+		#if user.id != reaction.message.author.id:
+		#    return
 
-		emoji = str(reaction.emoji)
-		await reaction.message.channel.send(emoji)
+		#emoji = str(reaction.emoji)
+		#await reaction.message.channel.send(emoji)
 
-		# check if valid action
-		#if emoji not in REACTIONS:
-		#   return
-
-		#self.reset_timeout()
-
-		# Run relevant action method
-		#action = getattr(self, f'do_{REACTIONS[emoji]}', None)
-		#if action:
-		#    await action()
-
-		# remove the added reaction to prep for re-use
-		#with suppress(HTTPException):
-		#    await self.message.remove_reaction(reaction, user)
 
 
 
